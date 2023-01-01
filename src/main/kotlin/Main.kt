@@ -1,18 +1,10 @@
-fun main(args: Array<String>) {
+fun main() {
 
-    var float1 = 0.0001f
-    var float2: Float? = 0.333f
-    var float3 = 0.34343.toFloat()
+    // Declare another variable while holds lowercase of string, if null then print 'I give up!'
+    val x = "I AM UPPERCASE"
+    val lowercase = x.lowercase() ?: "I give up!"
+    println(lowercase)
 
-    var shortArray = shortArrayOf(1,2,4,5,6)
-
-    var shortArray1: Array<Short?> = arrayOf(1,2 ,34,55)
-
-    var intArray = Array<Int?>(40) { i -> (i+1)*5}
-
-    println("Printing Data")
-    for (i in intArray) {
-        println(i)
-    }
+    lowercase.let { println(it.replace("am", "am not")) }
 
 }
