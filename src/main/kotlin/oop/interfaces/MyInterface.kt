@@ -5,11 +5,16 @@ interface MyInterface {
 }
 
 interface MySubInterface: MyInterface {
+    val number: Int
+    val number2: Int
+        get() = number * 100
+
     fun mySubFunction(): String
 }
 
 class InterfaceImpl: MySubInterface {
     override fun myFunction(): String = "I am My Function"
+    override var number: Int = 90
 
     override fun mySubFunction(): String = "I am My Sub Function"
 }
