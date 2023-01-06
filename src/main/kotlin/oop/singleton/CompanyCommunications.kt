@@ -26,6 +26,8 @@ class SomeClass private constructor(val someString: String) {
     }
 }
 
+fun topLevelFunction(str: String) = println("The Toplevel function param $str")
+
 fun main() {
     println(CompanyCommunications.getTagLine())
     println(CompanyCommunications.getCopyRightLine())
