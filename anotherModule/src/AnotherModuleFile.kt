@@ -1,11 +1,7 @@
-import oop.enums.Department
-import oop.enums.Department.*
-import oop.singleton.CompanyCommunications
-import oop.singleton.topLevelFunction
+import oop.enums.Department.IT
+import oop.singleton.topLevelFunction as tf
 
 fun main() {
-   topLevelFunction("TEST")
-   println(CompanyCommunications.getCopyRightLine())
-
+   tf("TEST")
    println(IT.getInfo())
 }
