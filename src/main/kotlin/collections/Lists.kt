@@ -1,7 +1,5 @@
 package collections
 
-import java.awt.Stroke
-
 fun main() {
     val seasons = listOf<String>("spring","summer","monsoon")
     println(seasons)
