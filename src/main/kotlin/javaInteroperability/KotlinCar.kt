@@ -1,0 +1,4 @@
+package javaInteroperability
+
+class KotlinCar {
+}
